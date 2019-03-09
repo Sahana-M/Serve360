@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_calender"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/ProgressBar1"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        app:indicatorColor="#f56217"
+        app:indicatorName="BallRotateIndicator" />
+
+
+</RelativeLayout>
